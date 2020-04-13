@@ -47,11 +47,15 @@ describe "#multiply" do
     expect(multiply(3, 4)).to eq(12)
   end
 
-  it "multiplies two other numbers"
+  it "multiplies two other numbers" do
     # one other test here, don't forget do end ;)
+    expect(multiply(10,2)).to eq(20)
+  end
 
-  it "multiplies two other numbers, one of them being 0"
+  it "multiplies two other numbers, one of them being 0" do
     # one last test, with 0 in it
+    expect(multiply(0,30)).to eq(0)
+  end
 
 end
 
