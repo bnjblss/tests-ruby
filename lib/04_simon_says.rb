@@ -6,14 +6,14 @@ def shout(string2)
   return string2.upcase
 end
 
-def repeat(string3, b=0)
- if b = 0
-   return string3 + " " + string3
+def repeat(string3, *b)
+ if b.size > 0
+   result = "#{string3} "*b.join.to_i
+   return result.strip
  else
-   b.times do
-     print b * string3
-   end
- end
+   result = "#{string3} "*2
+   return result.strip
+  end
 end
 
 def start_of_word(word, i)
